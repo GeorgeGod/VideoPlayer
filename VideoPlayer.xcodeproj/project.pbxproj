@@ -14,6 +14,7 @@
 		5E5B80DC2007AC4400E0B098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5B80DA2007AC4400E0B098 /* LaunchScreen.storyboard */; };
 		5E5B80E52007ADFA00E0B098 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B80E42007ADFA00E0B098 /* Download.swift */; };
 		5E5B80E72007AE1700E0B098 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B80E62007AE1700E0B098 /* DownloadViewController.swift */; };
+		5E5B80E920090F3D00E0B098 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B80E820090F3D00E0B098 /* ListCollectionViewCell.swift */; };
 		F13956FE41362381BBC7704A /* Pods_VideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178DBB662134BA2E2BE16A84 /* Pods_VideoPlayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		5E5B80DD2007AC4400E0B098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E5B80E42007ADFA00E0B098 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		5E5B80E62007AE1700E0B098 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		5E5B80E820090F3D00E0B098 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		9D291F0F9FF1CEABF9D8C1EA /* Pods-VideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoPlayer/Pods-VideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				5E5B80E32007ADC500E0B098 /* Download */,
 				5E5B80D12007AC4400E0B098 /* AppDelegate.swift */,
 				5E5B80D32007AC4400E0B098 /* ViewController.swift */,
+				5E5B80E820090F3D00E0B098 /* ListCollectionViewCell.swift */,
 				5E5B80D52007AC4400E0B098 /* Main.storyboard */,
 				5E5B80D82007AC4400E0B098 /* Assets.xcassets */,
 				5E5B80DA2007AC4400E0B098 /* LaunchScreen.storyboard */,
@@ -181,10 +184,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VideoPlayer/Pods-VideoPlayer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -232,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E5B80E52007ADFA00E0B098 /* Download.swift in Sources */,
+				5E5B80E920090F3D00E0B098 /* ListCollectionViewCell.swift in Sources */,
 				5E5B80D42007AC4400E0B098 /* ViewController.swift in Sources */,
 				5E5B80E72007AE1700E0B098 /* DownloadViewController.swift in Sources */,
 				5E5B80D22007AC4400E0B098 /* AppDelegate.swift in Sources */,
