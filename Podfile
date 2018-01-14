@@ -12,4 +12,5 @@ target 'VideoPlayer' do
   pod 'SnapKit'
 #  pod 'DOFavoriteButton'
   pod 'Hue'
+  pod 'SQLite.swift'
 end
