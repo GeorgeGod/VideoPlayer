@@ -63,5 +63,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        self.navigationController?.pushViewController(VideoPlayerViewController(), animated: true)
+        self.present(VideoPlayerViewController(), animated: true, completion: nil)
+    }
+    
 }
 

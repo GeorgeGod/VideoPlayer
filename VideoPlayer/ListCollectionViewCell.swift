@@ -24,11 +24,11 @@ class ListCollectionViewCell: UICollectionViewCell {
             make.edges.equalToSuperview()
         }
         
-        let url = URL(string: "https://d2.xia12345.com/down/2017/9/11001/17960036.mp4")
-        
-        let image = getVideoImage(videoUrl: url!)
-        
-        imageView.image = image
+//        let url = URL(string: "https://d2.xia12345.com/down/2017/9/11001/17960036.mp4")
+//        
+//        let image = getVideoImage(videoUrl: url!)
+//        
+//        imageView.image = image
         
         self.contentView.backgroundColor = UIColor.randomColor()
     }
