@@ -21,6 +21,7 @@ extension UIColor {
 class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     var collectionView: UICollectionView!
+    var data:[String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,18 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         addSwipeGesture()
         addLongPressGesture()
         findPicture()
+        
+        data = AVResouces.getLocalAVRes()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        checkDownloadURL()
+    }
+    
+    func checkDownloadURL() -> Void {
+        //系统级别
+        let pasteboard:UIPasteboard = UIPasteboard.general
+        print("复制板中的数据是:\(pasteboard.string ?? "")")
     }
 
     func makeCollectionView() -> Void {
@@ -54,12 +67,10 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return data.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCollectionViewCell", for: indexPath)
-        
-        
         
         return cell
     }
@@ -101,8 +112,10 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //        self.navigationController?.pushViewController(VideoPlayerViewController(), animated: true)
-        self.present(VideoPlayerViewController(), animated: true, completion: nil)
+        let ctrl = VideoPlayerViewController()
+        ctrl.path = data[indexPath.row]
+        self.navigationController?.pushViewController(ctrl, animated: true)
+//        self.present(VideoPlayerViewController(), animated: true, completion: nil)
     }
 
 }

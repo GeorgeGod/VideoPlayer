@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F5BF3FF9D5348E89FE012FB /* Pods_VideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEBF3C0F79C7647DA313319 /* Pods_VideoPlayer.framework */; };
+		5E5B80F6200CF11500E0B098 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B80F5200CF11500E0B098 /* Path.swift */; };
 		84740C84200C4B0C00B10EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84740C83200C4B0C00B10EBF /* AppDelegate.swift */; };
 		84740C86200C4B0C00B10EBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84740C85200C4B0C00B10EBF /* ViewController.swift */; };
 		84740C89200C4B0C00B10EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84740C87200C4B0C00B10EBF /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		5CA71311BB9963B477857403 /* Pods-VideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoPlayer/Pods-VideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		5E5B80F5200CF11500E0B098 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		84740C80200C4B0C00B10EBF /* VideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84740C83200C4B0C00B10EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84740C85200C4B0C00B10EBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				84740CA6200C4C3100B10EBF /* RandomPicture.swift */,
+				5E5B80F5200CF11500E0B098 /* Path.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				84740C84200C4B0C00B10EBF /* AppDelegate.swift in Sources */,
 				84740C99200C4BAD00B10EBF /* BaseTabBarController.swift in Sources */,
 				84740CAC200C4C7500B10EBF /* MainViewController.swift in Sources */,
+				5E5B80F6200CF11500E0B098 /* Path.swift in Sources */,
 				84740CB1200C4D2900B10EBF /* Download.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

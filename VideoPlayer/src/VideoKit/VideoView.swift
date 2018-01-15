@@ -26,10 +26,15 @@ class VideoView: UIView {
     func makeVideoView(_ url:String) -> Void {
         let Url = URL(string: url)
         playerItem = AVPlayerItem(url: Url!)
+//        let av = AVAsset(url: URL(string: url)!)
+//        playerItem = AVPlayerItem(asset: av)
+        
         
         playerItem.addObserver(self, forKeyPath: "loadedTimeRanges", options: .new, context: nil)
         playerItem.addObserver(self, forKeyPath: "status", options: .new, context: nil)
         avplayer = AVPlayer(playerItem: playerItem)
+        
+//        avplayer = AVPlayer(url: URL(fileURLWithPath: url))
         
         playerLayer = AVPlayerLayer(player: avplayer)
         playerLayer.videoGravity = .resizeAspect
@@ -114,5 +119,22 @@ class VideoView: UIView {
                 
             })
         }
+    }
+}
+
+class AVResouces: NSObject {
+    
+    public static func getLocalAVRes() -> [String] {
+        let arr = Path.obtainResources(nil)
+        var data = [String]()
+        
+        if arr.count > 0 {
+            for item in arr {
+                if item.hasSuffix(".mp4") {
+                    data.append(item)
+                }
+            }
+        }
+        return data
     }
 }

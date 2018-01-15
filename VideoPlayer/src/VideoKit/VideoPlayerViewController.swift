@@ -10,8 +10,16 @@ import UIKit
 
 class VideoPlayerViewController: UIViewController {
 
+    var path:String!
     var videoView:VideoView!
     
+//    convenience init(_ path: String) {
+//        super.init()
+//        self.path = path
+//    }
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder)没有实现")
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +27,9 @@ class VideoPlayerViewController: UIViewController {
 
         videoView = VideoView()
         videoView.backgroundColor = UIColor.lightGray
-        let urlstr = "https://d2.xia12345.com/down/2017/9/11001/17960036.mp4"
+//        let urlstr = "https://d2.xia12345.com/down/2017/9/11001/17960036.mp4"
+        
+        let urlstr = self.path!
         
         videoView.makeVideoView(urlstr)
         self.view.addSubview(videoView)
