@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  VideoPlayer
 //
-//  Created by 虞嘉伟 on 2018/1/11.
-//  Copyright © 2018年 虞嘉伟. All rights reserved.
+//  Created by admin on 2018/1/15.
+//  Copyright © 2018年 george. All rights reserved.
 //
 
 import UIKit
@@ -16,11 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-//        let db = DB()
-//        db.initDB()
-//        db.insert()
-        
+        self.window?.rootViewController = BaseTabBarController()
+        //        let db = DB()
+        //        db.initDB()
+        //        db.insert()
         return true
     }
 

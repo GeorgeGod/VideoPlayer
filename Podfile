@@ -8,7 +8,7 @@ target 'VideoPlayer' do
   # Pods for VideoPlayer
   pod 'Alamofire'
 #  pod 'ExSwift'
-  pod 'DGElasticPullToRefresh'
+#  pod 'DGElasticPullToRefresh'
   pod 'SnapKit'
 #  pod 'DOFavoriteButton'
   pod 'Hue'

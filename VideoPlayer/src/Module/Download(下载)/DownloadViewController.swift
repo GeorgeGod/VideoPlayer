@@ -10,8 +10,12 @@ import UIKit
 
 class DownloadViewController: UIViewController {
 
+    var tableView:UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "下载"
+        self.view.backgroundColor = UIColor.white
         
     }
 }
